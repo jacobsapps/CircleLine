@@ -1,0 +1,137 @@
+[
+    {
+        "stop": 1,
+        "pubName": "The Shakespeare",
+        "station": "Victoria"
+    },
+    {
+        "stop": 2,
+        "pubName": "The Old Star",
+        "station": "St. James's Park"
+    },
+    {
+        "stop": 3,
+        "pubName": "St Stephen's Tavern",
+        "station": "Westminster"
+    },
+    {
+        "stop": 4,
+        "pubName": "The Princess Of Wales",
+        "station": "Embankment"
+    },
+    {
+        "stop": 5,
+        "pubName": "Temple Brew House",
+        "station": "Temple"
+    },
+    {
+        "stop": 6,
+        "pubName": "The Blackfriar",
+        "station": "Blackfriars"
+    },
+    {
+        "stop": 7,
+        "pubName": "Ye Olde Watling",
+        "station": "Mansion House"
+    },
+    {
+        "stop": 8,
+        "pubName": "Cannick Tapps",
+        "station": "Cannon Street"
+    },
+    {
+        "stop": 9,
+        "pubName": "The Monument",
+        "station": "Monument"
+    },
+    {
+        "stop": 10,
+        "pubName": "The Minories",
+        "station": "Tower Hill"
+    },
+    {
+        "stop": 11,
+        "pubName": "The Hoop and Grapes",
+        "station": "Aldgate"
+    },
+    {
+        "stop": 12,
+        "pubName": "Hamilton Hall",
+        "station": "Liverpool Street"
+    },
+    {
+        "stop": 13,
+        "pubName": "The Globe",
+        "station": "Moorgate"
+    },
+    {
+        "stop": 14,
+        "pubName": "The Shakespeare",
+        "station": "Barbican"
+    },
+    {
+        "stop": 15,
+        "pubName": "The Castle",
+        "station": "Farringdon"
+    },
+    {
+        "stop": 16,
+        "pubName": "The Parcel Yard",
+        "station": "King's Cross"
+    },
+    {
+        "stop": 17,
+        "pubName": "The Euston Tap",
+        "station": "Euston Square"
+    },
+    {
+        "stop": 18,
+        "pubName": "The Albany",
+        "station": "Great Portland Street"
+    },
+    {
+        "stop": 19,
+        "pubName": "The Metropolitan Bar",
+        "station": "Baker Street"
+    },
+    {
+        "stop": 20,
+        "pubName": "The Chapel",
+        "station": "Edgware Road"
+    },
+    {
+        "stop": 21,
+        "pubName": "Sawyers Arms",
+        "station": "Paddington"
+    },
+    {
+        "stop": 22,
+        "pubName": "Bayswater Arms",
+        "station": "Bayswater"
+    },
+    {
+        "stop": 23,
+        "pubName": "Old Swan",
+        "station": "Notting Hill Gate"
+    },
+    {
+        "stop": 24,
+        "pubName": "The Britannia",
+        "station": "High Street Kensington"
+    },
+    {
+        "stop": 25,
+        "pubName": "The Stanhope Arms",
+        "station": "Gloucester Road"
+    },
+    {
+        "stop": 26,
+        "pubName": "Hoop & Toy",
+        "station": "South Kensington"
+    },
+    {
+        "stop": 27,
+        "pubName": "The Antelope",
+        "station": "Sloane Square"
+    }
+]
