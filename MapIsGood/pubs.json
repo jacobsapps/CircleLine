@@ -2,136 +2,190 @@
     {
         "stop": 1,
         "pubName": "The Shakespeare",
-        "station": "Victoria"
+        "station": "Victoria",
+        "description": "The Shakespeare is a large, historic pub near Victoria Station. It once had the longest bar counter in London! A Greene King pub serving its own beers and guest ales like Timothy Taylor.",
+        "address": "99 Buckingham Palace Rd, London SW1W 0RP"
     },
     {
         "stop": 2,
         "pubName": "The Old Star",
-        "station": "St. James's Park"
+        "station": "St. James's Park",
+        "description": "Recently refurbished and spread over three floors, The Old Star is filled with London Underground memorabilia. It’s a Greene King pub, offering classic beers and real ales.",
+        "address": "66 Broadway, London SW1H 0DB"
     },
     {
         "stop": 3,
         "pubName": "St Stephen's Tavern",
-        "station": "Westminster"
+        "station": "Westminster",
+        "description": "A Grade-II listed pub opposite Big Ben and The Houses of Parliament. Opened in 1875, it's famous for its historic patrons, including Churchill. Serves Hall & Woodhouse's Badger beers.",
+        "address": "10 Bridge St, London SW1A 2JR"
     },
     {
         "stop": 4,
         "pubName": "The Princess Of Wales",
-        "station": "Embankment"
+        "station": "Embankment",
+        "description": "A Nicholson’s pub near Charing Cross, known for its historic decor and changing cask ales. Named after King George IV’s secret first wife.",
+        "address": "27 Villiers St, Greater, London WC2N 6ND"
     },
     {
         "stop": 5,
         "pubName": "Temple Brew House",
-        "station": "Temple"
+        "station": "Temple",
+        "description": "A microbrewery and home to Essex Street Brewing Company. Offers fresh pints brewed on-site, with a unique and cozy atmosphere.",
+        "address": "46 Essex St, Temple, London WC2R 3JF"
     },
     {
         "stop": 6,
         "pubName": "The Blackfriar",
-        "station": "Blackfriars"
+        "station": "Blackfriars",
+        "description": "A stunning Art Nouveau pub built in 1875, located on the site of a Dominican friary. Famous for its unique decor and Nicholson’s selection of cask ales.",
+        "address": "174 Queen Victoria St, Greater, City of London, London EC4V 4EG"
     },
     {
         "stop": 7,
         "pubName": "Ye Olde Watling",
-        "station": "Mansion House"
+        "station": "Mansion House",
+        "description": "A Nicholson’s pub built using wood from old ships by Christopher Wren. Features a historic back room where plans for St Paul's Cathedral were drawn up.",
+        "address": "29 Watling St, Greater, City of London, London EC4M 9BR"
     },
     {
         "stop": 8,
-        "pubName": "Cannick Tapps",
-        "station": "Cannon Street"
+        "pubName": "The Cannick Tapps",
+        "station": "Cannon Street",
+        "description": "An underground pub with air conditioning and a large craft beer selection. Known for its rotating beer selection and quirky interior.",
+        "address": "105-109 Cannon St, City of London, London EC4N 5AD"
     },
     {
         "stop": 9,
         "pubName": "The Monument",
-        "station": "Monument"
+        "station": "Monument",
+        "description": "A Greene King pub located near the historic Monument to the Great Fire of London. Large space with outdoor seating and a classic pub menu.",
+        "address": "18 Fish St Hill, City of London, London EC3R 6DB"
     },
     {
         "stop": 10,
         "pubName": "The Minories",
-        "station": "Tower Hill"
+        "station": "Tower Hill",
+        "description": "A traditional pub under railway arches, featuring a heated beer garden and large TV screens for sports fans.",
+        "address": "64-73 Minories, City of London, London EC3N 1LA"
     },
     {
         "stop": 11,
         "pubName": "The Hoop and Grapes",
-        "station": "Aldgate"
+        "station": "Aldgate",
+        "description": "One of the few timber-framed buildings to survive the Great Fire of London, this pub is full of history and serves craft beers and British pub food.",
+        "address": "47 Aldgate High St, Greater, City of London, London EC3N 1AL"
     },
     {
         "stop": 12,
         "pubName": "Hamilton Hall",
-        "station": "Liverpool Street"
+        "station": "Liverpool Street",
+        "description": "A grand Wetherspoons pub with chandeliers and high ceilings, formerly the ballroom of the Great Eastern Hotel.",
+        "address": "Liverpool St, City of London, London EC2M 7PY"
     },
     {
         "stop": 13,
         "pubName": "The Globe",
-        "station": "Moorgate"
+        "station": "Moorgate",
+        "description": "A Nicholson’s pub offering an extensive drink selection, including 20+ gins and a variety of craft ales. Located near the birthplace of poet John Keats.",
+        "address": "83 Moorgate, Greater, City of London, London EC2M 6SA"
     },
     {
         "stop": 14,
         "pubName": "The Shakespeare",
-        "station": "Barbican"
+        "station": "Barbican",
+        "description": "A historic pub that now serves Italian food in collaboration with the renowned La Pia restaurant. Closed on Sundays.",
+        "address": "The Shakespeare, 2 Goswell Rd., Golden Lane Estate, London EC1M 7AA"
     },
     {
         "stop": 15,
         "pubName": "The Castle",
-        "station": "Farringdon"
+        "station": "Farringdon",
+        "description": "A classic pub once used for cockfighting and pawnbroking. Look for the pawnbroker's sign outside, a nod to its unusual history.",
+        "address": "34-35 Cowcross St, Greater, London EC1M 6DB"
     },
     {
         "stop": 16,
         "pubName": "The Parcel Yard",
-        "station": "King's Cross"
+        "station": "King's Cross",
+        "description": "A Fuller's pub inside King's Cross Station, featuring historic architecture and a selection of classic Fuller's beers like London Pride.",
+        "address": "The Parcel Yard, King's Cross, Euston Rd., London N1 9AL"
     },
     {
         "stop": 17,
         "pubName": "The Euston Tap",
-        "station": "Euston Square"
+        "station": "Euston Square",
+        "description": "A beer lover’s paradise with 28 keg and 15 cask beers. Located in one of the remaining lodges from the old Euston Station.",
+        "address": "190 Euston Rd., London NW1 2EF"
     },
     {
         "stop": 18,
         "pubName": "The Albany",
-        "station": "Great Portland Street"
+        "station": "Great Portland Street",
+        "description": "A laid-back pub in Fitzrovia, known for its relaxed atmosphere and late-night hours.",
+        "address": "240 Great Portland St, Greater, London W1W 5QU"
     },
     {
         "stop": 19,
         "pubName": "The Metropolitan Bar",
-        "station": "Baker Street"
+        "station": "Baker Street",
+        "description": "A Wetherspoons pub named after the world’s first underground railway, located near Regent’s Park and Madame Tussauds.",
+        "address": "Unit 7, Station Approach, Marylebone Rd, London NW1 5LD"
     },
     {
         "stop": 20,
         "pubName": "The Chapel",
-        "station": "Edgware Road"
+        "station": "Edgware Road",
+        "description": "A spacious gastro pub serving freshly cooked food and a wide variety of international drinks.",
+        "address": "48 Chapel St, London NW1 5DP"
     },
     {
         "stop": 21,
         "pubName": "Sawyers Arms",
-        "station": "Paddington"
+        "station": "Paddington",
+        "description": "A Greene King pub next to Paddington Station, offering traditional British fare and a familiar selection of drinks.",
+        "address": "8 London St, Tyburnia, London W2 1HL"
     },
     {
         "stop": 22,
         "pubName": "Bayswater Arms",
-        "station": "Bayswater"
+        "station": "Bayswater",
+        "description": "A Greene King pub located near Kensington Gardens, serving traditional pub food and real ales.",
+        "address": "Queensway, London W2 4QH"
     },
     {
         "stop": 23,
         "pubName": "Old Swan",
-        "station": "Notting Hill Gate"
+        "station": "Notting Hill Gate",
+        "description": "A spacious Greene King pub that briefly changed its name to The Rat & Parrot before reverting to its original identity.",
+        "address": "206 Kensington Church St, London W8 4DP"
     },
     {
         "stop": 24,
         "pubName": "The Britannia",
-        "station": "High Street Kensington"
+        "station": "High Street Kensington",
+        "description": "A cozy pub with leather armchairs and a fireplace, situated on the historic Britannia Brewery site.",
+        "address": "1 Allen St, London W8 6UX"
     },
     {
         "stop": 25,
         "pubName": "The Stanhope Arms",
-        "station": "Gloucester Road"
+        "station": "Gloucester Road",
+        "description": "A bright Victorian pub built in the 1800s, named after the Stanhope family, with a classic Greene King menu.",
+        "address": "97 Gloucester Rd, South Kensington, London SW7 4SS"
     },
     {
         "stop": 26,
         "pubName": "Hoop & Toy",
-        "station": "South Kensington"
+        "station": "South Kensington",
+        "description": "A traditional Victorian pub with exposed brick walls, located near the Royal Albert Hall and Victoria & Albert Museum.",
+        "address": "34 Thurloe Pl, South Kensington, London SW7 2HQ"
     },
     {
         "stop": 27,
         "pubName": "The Antelope",
-        "station": "Sloane Square"
+        "station": "Sloane Square",
+        "description": "A historic Belgravia pub with a warm atmosphere, marking the final stop of the Circle Line Pub Crawl.",
+        "address": "22 Eaton Terrace, London SW1W 8EZ"
     }
 ]

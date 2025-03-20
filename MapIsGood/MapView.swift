@@ -8,91 +8,48 @@
 import MapKit
 import SwiftUI
 
-
-// Circle line pub crawl:
-// https://circlelinepubcrawl.co.uk 
-struct Pub: Decodable {
-    let stop: Int
-    let pubName: String
-    let station: String
-    var coordinate: CLLocationCoordinate2D?
-    var visited: Bool = false
-    
-    enum CodingKeys: String, CodingKey {
-        case stop
-        case pubName
-        case station
-    }
-    
-//    init(from decoder: Decoder) throws {
-//        let container = try decoder.container(keyedBy: CodingKeys.self)
-//        pubName = try container.decode(String.self, forKey: .pubName)
-//        station = try container.decode(String.self, forKey: .station)
-//        let latitude = try container.decode(Double.self, forKey: .latitude)
-//        let longitude = try container.decode(Double.self, forKey: .longitude)
-//        coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
-//    }
-}
-
 struct MapView: View {
+    @StateObject private var pubService = PubService()
     @State private var cameraPosition: MapCameraPosition = .camera(
-        MapCamera(centerCoordinate: CLLocationCoordinate2D(latitude: 51.5066, longitude: -0.1237),
-                  distance: 10_000,
+        MapCamera(centerCoordinate: CLLocationCoordinate2D(latitude: 51.5077, longitude: -0.1300),
+                  distance: 12_000,
                   heading: .zero)
     )
-//    @State private var pubs: [Pub] = []
-    @StateObject private var pubService = PubService()
+    @State private var scene: MKLookAroundScene?
     
     var body: some View {
         Map(position: $cameraPosition) {
             mapAnnotations
-            
-            //            MapPolygon(overlay(coordinate: coordinate))
+            circleLine
         }
-        .mapStyle(.imagery)
+        .mapStyle(.hybrid)
         .ignoresSafeArea()
-//        .onAppear {
-//            loadPubCrawl()
-//        }
     }
     
-
+    
     
     
     //        .sheet(isPresented: $isSheetPresented) {
     //               SearchSheet()
     //        }
     //    }
-    //
-    //    private func overlay(coordinate: CLLocationCoordinate2D) -> MKPolygon {
-    //        let rectangle = rectangle(around: coordinate)
-    //        return MKPolygon(coordinates: rectangle, count: rectangle.count)
-    //    }
+    
+    private var circleLine: MapPolyline {
+        MapPolyline(
+            MKPolyline(coordinates: pubService.pubs.compactMap(\.coordinate),
+                       count: pubService.pubs.count)
+        )
+    }
     
     private var mapAnnotations: some MapContent {
         ForEach(pubService.pubs.filter { $0.coordinate != nil }, id: \.station) { pub in
-            
             // TODO: Add a toggle so I can check off the pubs! Put it in a sheet
-            Annotation(pub.pubName, coordinate: pub.coordinate!) {
-                ZStack {
-                    Circle()
-                        .frame(width: 30, height: 30)
-                        .foregroundStyle(.orange)
-                    
-                    Image(systemName: "mug.fill")
-                        .font(.headline)
-                        .foregroundStyle(.white)
-                }
-                
-//                FlightAnnotationView(flight: flight,
-//                                     rotationAngle: rotationAngle,
-//                                     color: userColor,
-//                                     startTime: startTime)
+            Annotation("\(pub.stop): \(pub.pubName)", coordinate: pub.coordinate!) {
+                PubAnnotationView(pub: pub)
             }
         }
     }
     
-    //    @State private var scene: MKLookAroundScene?
     //
     //    .onChange(of: selectedLocation) {
     //        if let selectedLocation {
@@ -118,56 +75,22 @@ struct MapView: View {
     //    }
 }
 
-//struct FlightAnnotationView: View {
-//
-//    let rotation: Double
-//    let image: Image
-//    let emoji: String?
-//    let scale: Double
-//    let color: Color
-//    let startTime: Date
-//
-//    init(flight: Flight, rotationAngle: Angle, color: Color, startTime: Date) {
-//        self.rotation = rotationAngle.degrees + (flight.true_track ?? 0)
-//        self.image = flight.category.image
-//        self.emoji = flight.category.emoji
-//        let categoryScale = flight.category.scaling
-//        let height = flight.geo_altitude ?? 0
-//        let heightScale = min(2, max(4.7 - log10(height + 1), 0.7))
-//        self.scale = categoryScale * heightScale
-//        self.color = color
-//        self.startTime = startTime
-//    }
-//
-//    var body: some View {
-//        TimelineView(.animation) { context in
-//            aircraft
-//                .foregroundColor(color)
-//                .rotationEffect(.degrees(rotation))
-//                .scaleEffect(scale)
-//                .blur(radius: 0.5)
-//                .crtScreenEffect(startTime: startTime)
-//        }
-//    }
-//
-//    @ViewBuilder
-//    private var aircraft: some View {
-//        if let emoji {
-//            GeometryReader { geo in
-//                Rectangle()
-//                    .mask(
-//                        Text(emoji)
-//                            .font(.system(size: min(geo.size.width, geo.size.height)))
-//                            .frame(width: geo.size.width, height: geo.size.height, alignment: .center)
-//                    )
-//            }
-//
-//        } else {
-//            image
-//        }
-//    }
-//}
-//
+struct PubAnnotationView: View {
+    
+    let pub: Pub
+    
+    init(pub: Pub) {
+        self.pub = pub
+    }
+    
+    var body: some View {
+        Circle()
+            .frame(width: 40, height: 40)
+            .foregroundStyle(.orange)
+            .mask(Image(systemName: "mug.fill").font(.headline))
+            .blendMode(.difference)
+    }
+}
 
 #Preview {
     MapView()

@@ -35,13 +35,14 @@ class PubService: NSObject, ObservableObject, MKLocalSearchCompleterDelegate {
         pubs = try! JSONDecoder().decode([Pub].self, from: data)
         print(pubs)
         for pub in pubs.shuffled() {
-            let address = "\(pub.pubName) Pub London"
+            let address = "\(pub.address)"
             print(address)
             let geoCoder = CLGeocoder()
             geoCoder.geocodeAddressString(address) { (placemarks, error) in
-                print(placemarks?.first)
+                
+                print(placemarks?.first, error)
                 guard let coordinate = placemarks?.first?.location?.coordinate else {
-                    print("Oh no there are no results")
+                    print("No results for \(pub.pubName)")
                     return
                 }
                 print(coordinate)
