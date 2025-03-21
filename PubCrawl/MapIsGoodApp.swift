@@ -1,6 +1,6 @@
 //
-//  MapIsGoodApp.swift
-//  MapIsGood
+//  PubCrawlApp.swift
+//  PubCrawl
 //
 //  Created by Jacob Bartlett on 18/03/2025.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct MapIsGoodApp: App {
+struct PubCrawlApp: App {
     var body: some Scene {
         WindowGroup {
             MapView()

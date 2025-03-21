@@ -9,9 +9,11 @@ import SwiftUI
 
 struct PubAnnotationView: View {
     let pub: Pub
+    let isSelected: Bool
     
-    init(pub: Pub) {
+    init(pub: Pub, isSelected: Bool) {
         self.pub = pub
+        self.isSelected = isSelected
     }
     
     var body: some View {
@@ -19,6 +21,7 @@ struct PubAnnotationView: View {
             badge
             icon
         }
+        .scaleEffect(isSelected ? 1.3 : 1)
     }
     
     private var badge: some View {
@@ -75,5 +78,10 @@ struct PubAnnotationView: View {
 }
 
 #Preview {
-    PubAnnotationView(pub: .init(stop: 1, pubName: "The Shakespeare", station: "Victoria", description: "Nice bardy pub", address: "London"))
+    PubAnnotationView(pub: .init(stop: 1,
+                                 pubName: "The Shakespeare",
+                                 station: "Victoria",
+                                 description: "Nice bardy pub",
+                                 address: "London", coordinate: .init()),
+                      isSelected: false)
 }
