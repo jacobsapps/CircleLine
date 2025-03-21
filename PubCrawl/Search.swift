@@ -15,6 +15,7 @@ import MapKit
 class PubService: NSObject, ObservableObject, MKLocalSearchCompleterDelegate {
 
     @Published var pubs: [Pub] = []
+    @Published var selectedPub: Pub?
     static let shared = PubService()
     
     private var completer = MKLocalSearchCompleter()

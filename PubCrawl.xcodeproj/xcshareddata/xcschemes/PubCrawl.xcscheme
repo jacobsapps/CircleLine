@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "169512FC2D89D00000EEF6E3"
-               BuildableName = "MapIsGood.app"
-               BlueprintName = "MapIsGood"
-               ReferencedContainer = "container:MapIsGood.xcodeproj">
+               BuildableName = "PubCrawl.app"
+               BlueprintName = "PubCrawl"
+               ReferencedContainer = "container:PubCrawl.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "169512FC2D89D00000EEF6E3"
-            BuildableName = "MapIsGood.app"
-            BlueprintName = "MapIsGood"
-            ReferencedContainer = "container:MapIsGood.xcodeproj">
+            BuildableName = "PubCrawl.app"
+            BlueprintName = "PubCrawl"
+            ReferencedContainer = "container:PubCrawl.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "169512FC2D89D00000EEF6E3"
-            BuildableName = "MapIsGood.app"
-            BlueprintName = "MapIsGood"
-            ReferencedContainer = "container:MapIsGood.xcodeproj">
+            BuildableName = "PubCrawl.app"
+            BlueprintName = "PubCrawl"
+            ReferencedContainer = "container:PubCrawl.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
