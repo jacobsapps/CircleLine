@@ -21,7 +21,7 @@ struct PubAnnotationView: View {
             badge
             icon
         }
-        .scaleEffect(isSelected ? 1.3 : 1)
+        .scaleEffect(isSelected ? 1.8 : 1)
     }
     
     private var badge: some View {
